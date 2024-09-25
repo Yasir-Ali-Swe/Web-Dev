@@ -1,5 +1,6 @@
 # Web Development Course & MERN Stack Learning Repository
 
+This repo is dedicated to my web dev journey
 This repository contains all the assignments, projects, and exercises completed during my Web Development course in sixth semester of my BSSE program, as well as additional work related to my self-study of the MERN stack.
 
 ## Course Topics
@@ -29,5 +30,3 @@ The repository is organized by topic and project:
 - `/js`: JavaScript practice scripts and projects
 - `/nextjs`: Next.js projects and experiments
 - `/mern`: Projects and experiments related to the MERN stack
-
-
