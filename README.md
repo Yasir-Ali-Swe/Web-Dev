@@ -1,6 +1,6 @@
 # Web Development Course & MERN Stack Learning Repository
 
-This repo is dedicated to my web dev journey
+This repo is dedicated to my web dev journey.
 This repository contains all the assignments, projects, and exercises completed during my Web Development course in sixth semester of my BSSE program, as well as additional work related to my self-study of the MERN stack.
 
 ## Course Topics
