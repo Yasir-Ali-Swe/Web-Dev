@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: space-around;
+      }
+      .leadindDecimal {
+        counter-reset: list-counter;
+      }
+      .leadindDecimal li {
+        counter-increment: list-counter;
+        list-style: none;
+      }
+      .leadindDecimal,
+      .leadindDecimal li::before {
+        content: counter(list-counter, decimal-leading-zero) ". ";
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Unorderd List</h1>
+      <h2>Disc</h2>
+      <ul type="disc">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ul>
+      <h2>Square</h2>
+      <ul type="square">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ul>
+      <h2>circle</h2>
+      <ul type="circle">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ul>
+      <h2>None.no bullets</h2>
+      <ul type="none">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ul>
+    </div>
+    <div>
+      <h1>Orderd List</h1>
+      <h2>Decimal</h2>
+      <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+      <h2>Decimal leading with zero</h2>
+      <ol class="leadindDecimal">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+      <h2>Lower Alpha</h2>
+      <ol type="a">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+      <h2>lower roman</h2>
+      <ol type="i">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+    </div>
+  </body>
+</html>
