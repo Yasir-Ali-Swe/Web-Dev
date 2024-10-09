@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>New Product</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="Name">Name</label></td>
+                <td><input type="text" id="Name"></td>
+            </tr>
+            <tr>
+                <td><br><label for="Price">Price</label></td>
+                <td><input type="text" id="Price"></td>
+            </tr>
+            <tr>
+                <td><br><label for="Release">Release on</label></td>
+                <td>
+                    <input type="number" min="2010" max="2025" value="2010" id="ReleaseYear"> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <select id="ReleaseMonth">
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                        <option>January</option>
+                    </select> &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <select id="ReleaseDay">
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><br><label for="category">Category</label></td>
+                <td>
+                    <select id="category">
+                        <option>Toys & Games</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><br><label for="Ratings">Rating</label></td>
+                <td><br>
+                    <select id="Ratings">
+                        <option value="1">1</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><br><label for="discontinued">Discontinued</label></td>
+                <td><br>
+                    <input type="checkbox" id="discontinued">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><br><button type="submit">Create Product</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
