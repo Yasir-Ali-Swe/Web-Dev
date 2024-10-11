@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h2><u>Project Managment</u></h2>
+    <form>
+      <table cellspacing="35">
+        <tr>
+          <td>Project Name</td>
+          <td><input type="text" placeholder="Project Name" /></td>
+        </tr>
+        <tr>
+          <td>Assigned To</td>
+          <td>
+            <select>
+              <option selected>Er Merry Petision</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Start Date</td>
+          <td><input type="date" /></td>
+        </tr>
+        <tr>
+          <td>End Date</td>
+          <td><input type="date" /></td>
+        </tr>
+        <tr>
+          <td>Prioritory</td>
+          <td>
+            <input type="radio" name="prioritory" />High
+            <input type="radio" name="prioritory" />Avarage
+            <input type="radio" name="prioritory" />Low
+          </td>
+        </tr>
+        <tr>
+          <td>Discreption</td>
+          <td><textarea rows="3"></textarea></td>
+        </tr>
+        <tr>
+          <td align="center"><button type="submit">Submit</button></td>
+          <td align="center"><button type="reset">Clear</button></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
