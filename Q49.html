@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url("formbgc.webp");
+      }
+      h1 {
+        margin-top: 50px;
+        text-align: center;
+        color: red;
+      }
+      .formContainer {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .formContainer form {
+        width: 30%;
+      }
+      .inputs input {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        height: 35px;
+        border-radius: 15px;
+        padding: 4px 8px;
+      }
+      .inputs {
+        background-color: grey;
+        padding: 15px;
+      }
+      .btn {
+        background-color: grey;
+        padding: 15px;
+      }
+      .btn button {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 35px;
+        border-radius: 15px;
+        padding: 4px 8px;
+        background-color: red;
+        color: white;
+      }
+      .checkboxContainer {
+        display: flex;
+        align-items: center;
+        background-color: grey;
+        padding: 4px 8px;
+      }
+      .checkboxContainer input {
+        margin-right: 5px;
+        height: 15px;
+      }
+      .options {
+        height: 80px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: white;
+      }
+      .options p {
+        color: red;
+      }
+      .bottomBorder {
+        height: 3px;
+        background-color: red;
+      }
+      .lowerboder {
+        height: 3px;
+        background-color: white;
+        margin-bottom: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Login Form</h1>
+    <div class="formContainer">
+      <form>
+        <div class="inputs">
+          <label>Username*</label>
+          <input type="text" placeholder="Username" />
+          <label>Password*</label>
+          <input type="text" placeholder="Password" />
+        </div>
+        <div class="checkboxContainer">
+          <input type="checkbox" /> <label>Remember Me</label>
+        </div>
+        <div class="btn">
+          <button type="submit">Login</button>
+        </div>
+        <div class="options">
+          <p>Don't Have an Account?</p>
+          <p>Forgot Password?</p>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="lowerboder"></div>
+      </form>
+    </div>
+  </body>
+</html>
