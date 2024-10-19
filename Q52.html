@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+      }
+      .container {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+        overflow: hidden;
+      }
+      .leftdiv {
+        width: 50%;
+        padding: 20px;
+        background: linear-gradient(135deg, #3c5fdf, #6faefb);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .leftdiv h1 {
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      .inputs {
+        margin-bottom: 20px;
+      }
+      .inputs label {
+        color: white;
+        display: block;
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+      }
+      .inputs input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+      }
+      .checkboxContainer {
+        display: flex;
+        align-items: center;
+        color: white;
+        margin-bottom: 20px;
+      }
+      .checkboxContainer input {
+        margin-right: 10px;
+      }
+      .btn button {
+        width: 100%;
+        padding: 10px;
+        background: linear-gradient(135deg, #f5af19, #f12711);
+        border: none;
+        color: white;
+        font-size: 1rem;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .options {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+      }
+      .options p {
+        color: white;
+        font-size: 0.9rem;
+      }
+      .options p a {
+        color: white;
+        text-decoration: underline;
+      }
+      .formFooter {
+        text-align: center;
+        margin-top: 15px;
+        color: white;
+        font-size: 0.8rem;
+      }
+      .rightdiv {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .rightdiv img {
+        width: 90%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftdiv">
+        <h1>Log in</h1>
+        <div class="inputs">
+          <label>Username *</label>
+          <input type="text" placeholder="Enter your Username" />
+          <label>Password *</label>
+          <input type="password" placeholder="Enter your Password" />
+        </div>
+        <div class="checkboxContainer">
+          <input type="checkbox" id="remember" />
+          <label for="remember">Remember me</label>
+        </div>
+        <div class="btn">
+          <button type="submit">LOGIN</button>
+        </div>
+        <div class="options">
+          <p><a href="#">Forgot password?</a></p>
+          <p><a href="#">Don't have an account?</a></p>
+        </div>
+        <div class="formFooter">
+          Image from
+          <a href="https://www.freepik.com" target="_blank">Freepik</a>
+        </div>
+      </div>
+      <div class="rightdiv">
+        <img src="men.png" alt="Person with mobile app" />
+      </div>
+    </div>
+  </body>
+</html>
