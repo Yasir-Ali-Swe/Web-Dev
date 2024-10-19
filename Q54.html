@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("formbgc.webp");
+      }
+      .container {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        min-width: 35%;
+      }
+      form h1 {
+        text-align: center;
+        color: blue;
+      }
+      form input {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        margin: 5px;
+      }
+      form textarea {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        margin: 5px;
+      }
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn button {
+        background-color: black;
+        color: white;
+        width: 80px;
+        text-align: center;
+        border-radius: 15px;
+        padding: 8px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1>Get In Touch</h1>
+        <label>Name</label>
+        <input type="text" />
+        <label>Email</label>
+        <input type="text" />
+        <label>Message</label>
+        <textarea cols="20" rows="10"></textarea>
+        <div class="btn">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
