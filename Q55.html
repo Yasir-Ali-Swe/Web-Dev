@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+      }
+
+      .container {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .form-box {
+        height: 500px;
+        width: 300px;
+        border: 30px solid gold;
+      }
+
+      .inner-box {
+        height: 490px;
+        width: 290px;
+        border: 10px solid silver;
+      }
+
+      .form-wrapper {
+        height: 488px;
+        width: 289px;
+        border: 2px solid grey;
+        border-radius: 2px;
+      }
+
+      .form-wrapper .form {
+        padding: 30px;
+      }
+
+      .logo {
+        margin: auto;
+        height: 50px;
+        width: 100px;
+        border: 2px dotted gold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: gold;
+        padding: 5px;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 15px;
+      }
+
+      .form-group label {
+        margin-bottom: 5px;
+      }
+
+      .form-group input {
+        border: 2px solid gold;
+        height: 20px;
+        border-radius: 5px;
+      }
+
+      .submit-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .submit-section a {
+        color: gold;
+        text-decoration: none;
+      }
+
+      .submit-section input {
+        border-radius: 5px;
+        border-style: none;
+        background-color: gold;
+        color: orange;
+        font-weight: bold;
+        width: 100px;
+        padding: 10px;
+        margin-top: 10px;
+      }
+
+      /* Additional styling for the second form */
+      .form-box-small {
+        height: 300px;
+        width: 300px;
+        border: 30px solid gold;
+        margin-top: 170px;
+      }
+
+      .inner-box-small {
+        height: 290px;
+        width: 290px;
+        border: 10px solid silver;
+      }
+
+      .form-wrapper-small {
+        height: 288px;
+        width: 289px;
+        border: 2px solid grey;
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <div class="inner-box">
+          <div class="form-wrapper">
+            <form class="form">
+              <div class="logo">Your Logo Here</div>
+              <div class="form-group">
+                <label for="first-name">First name *</label>
+                <input required type="text" id="first-name" />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last name *</label>
+                <input required type="text" id="last-name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input required type="email" id="email" />
+              </div>
+              <div class="form-group">
+                <label for="password">Password *</label>
+                <input required type="password" id="password" />
+              </div>
+              <div class="form-group">
+                <label for="repeat-password">Repeat Password *</label>
+                <input required type="password" id="repeat-password" />
+              </div>
+              <div class="submit-section">
+                <a href="#">Have an account?</a>
+                <input type="submit" value="Sign up" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-box-small">
+        <div class="inner-box-small">
+          <div class="form-wrapper-small">
+            <form class="form">
+              <div class="logo">Your Logo Here</div>
+              <div class="form-group">
+                <label for="username">Username or Email Address *</label>
+                <input required type="text" id="username" />
+              </div>
+              <div class="form-group">
+                <label for="password-login">Password *</label>
+                <input required type="password" id="password-login" />
+              </div>
+              <div class="submit-section">
+                <a href="#">Forgot Password?<br />Create an account</a>
+                <input type="submit" value="Login" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
