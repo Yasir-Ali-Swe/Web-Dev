@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin-top: 70px;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        height: 500px;
+        width: 500px;
+        position: relative;
+        margin: auto;
+      }
+      .container img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+      form {
+        position: absolute;
+        height: 300px;
+        width: 400px;
+        margin-left: 70px;
+        margin-top: 180px;
+        display: flex;
+        gap: 10px;
+      }
+      .form-left,
+      .form-right {
+        height: 100%;
+        width: 60%;
+      }
+      .form-left {
+        padding: 10px;
+        background-color: white;
+      }
+      .form-left h2 {
+        color: blue;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 7px;
+        gap: 3px;
+      }
+      .form-group input,
+      .form-group textarea {
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid blue;
+      }
+      .checkbox-group {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+      .checkbox-group a {
+        text-decoration: none;
+        color: gold;
+      }
+      button {
+        color: white;
+        background-color: blue;
+        border: none;
+        border-radius: 10px;
+        margin-top: 5px;
+        width: 180px;
+        padding: 5px;
+      }
+      .form-right {
+        background-color: rgb(243, 243, 243);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+      }
+      .form-right h3 {
+        color: blue;
+        text-align: center;
+      }
+      .form-right span {
+        font-size: xx-small;
+        font-weight: bold;
+      }
+      .form-right p {
+        text-align: center;
+        font-size: x-small;
+      }
+      @media (max-width: 768px) {
+        .container {
+          width: 100%;
+          height: auto;
+        }
+        form {
+          flex-direction: column;
+          margin-left: 0;
+          margin-top: 50px;
+          width: 90%;
+          height: auto;
+        }
+        .form-left,
+        .form-right {
+          width: 100%;
+        }
+        .form-right {
+          padding: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="q15.jpg" alt="Background Image" />
+      <form>
+        <div class="form-left">
+          <h2>Contact Us</h2>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" placeholder="Enter Your Name" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" placeholder="Enter Your Email" type="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Enter Your Message"></textarea>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" name="terms" id="terms" />
+            <span>I accept the <a href="#">Terms of Service</a></span>
+          </div>
+          <button type="submit">Submit</button>
+        </div>
+        <div class="form-right">
+          <div>
+            <h3>Call us</h3>
+            <span>1(234) 567-890</span>
+            <span>1(234) 567-890</span>
+          </div>
+          <div>
+            <h3>Location</h3>
+            <span>121 Rock Street, 21 Avenue</span>
+            <span>New York, NY 92103</span>
+          </div>
+          <div>
+            <h3>Our Top Services</h3>
+            <span>Self Studying</span>
+            <span>Online Courses</span>
+            <span>Challenge Yourself</span>
+          </div>
+          <p>Image from freepik</p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
