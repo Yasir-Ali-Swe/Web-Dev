@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin-top: 100px;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      .container {
+        display: flex;
+        height: 450px;
+        margin: auto;
+        width: 700px;
+        background-color: white;
+        border: 1px solid lightgray;
+        gap: 20px;
+      }
+      .left-container img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .right-container {
+        padding: 20px;
+        width: 390px;
+        margin-top: 50px;
+        background-color: whitesmoke;
+        border-radius: 20px;
+      }
+      .right-container h2 {
+        margin-bottom: 20px;
+      }
+      .form-group {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 15px;
+      }
+      .form-group div {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      input,
+      textarea {
+        border-radius: 15px;
+        border: none;
+        padding: 10px;
+        background-color: #f9f9f9;
+        width: 100%;
+      }
+      input[type="submit"] {
+        color: white;
+        background-color: skyblue;
+        width: 90px;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #00aaff;
+      }
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          width: 90%;
+        }
+        .left-container {
+          height: auto;
+        }
+        .right-container {
+          width: 100%;
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- left container -->
+      <div class="left-container">
+        <img src="q16dish.png" alt="Dish Image" />
+      </div>
+      <!-- right container (form) -->
+      <div class="right-container">
+        <h2>Book Your Table</h2>
+        <div class="form-group">
+          <div>
+            <label for="phone">Phone</label>
+            <input
+              id="phone"
+              placeholder="Enter your phone (e.g)"
+              type="text"
+            />
+          </div>
+          <div>
+            <label for="name">Name</label>
+            <input id="name" placeholder="Enter your Name" type="text" />
+          </div>
+        </div>
+        <div class="form-group">
+          <div style="width: 100%">
+            <label for="date">Date</label>
+            <input id="date" placeholder="MM/DD/YYYY" type="text" />
+          </div>
+        </div>
+        <div class="form-group">
+          <div style="width: 100%">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Message" rows="4"></textarea>
+          </div>
+        </div>
+        <input type="submit" value="Submit" />
+      </div>
+    </div>
+  </body>
+</html>
