@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        background-color: #f4f4f4;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        height: 600px;
+        width: 400px;
+        border-left: 90px solid rgb(197, 3, 3);
+        border-top: 20px solid rgb(197, 3, 3);
+        border-bottom: 20px solid rgb(197, 3, 3);
+        border-right: 90px solid rgb(197, 3, 3);
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+      .container img {
+        margin: 10px;
+        width: 380px;
+        height: auto;
+      }
+      .form-container {
+        height: 365px;
+        width: 100%;
+        display: flex;
+      }
+      .form-container form {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .form-container label {
+        font-size: x-small;
+        margin-bottom: 5px;
+      }
+      input,
+      textarea {
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding: 6px;
+        background-color: lightgray;
+        margin-top: 5px;
+        width: 100%;
+      }
+      .submit-button {
+        background-color: rgb(197, 3, 3);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .submit-button:hover {
+        background-color: rgb(150, 3, 3);
+      }
+      .image-container {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .image-container img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      @media (max-width: 768px) {
+        .container {
+          width: 90%;
+        }
+        .form-container {
+          flex-direction: column;
+        }
+        .form-container form {
+          width: 100%;
+        }
+        .image-container {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="q17.png" alt="Contact Us" />
+      <div class="form-container">
+        <form>
+          <p style="text-align: center; margin-top: 30px">Get in Touch</p>
+          <label for="name">Name</label>
+          <input id="name" placeholder="Enter Your Name" type="text" required />
+
+          <label for="email">Email</label>
+          <input
+            id="email"
+            placeholder="Enter valid Email Address"
+            type="email"
+            required
+          />
+
+          <label for="help">How can we help?</label>
+          <textarea
+            id="help"
+            rows="4"
+            placeholder="Your message..."
+            required
+          ></textarea>
+
+          <div style="display: flex; justify-content: center">
+            <input class="submit-button" type="submit" value="Send" />
+          </div>
+        </form>
+        <div class="image-container">
+          <img src="q17b.png" alt="Decorative Image" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
