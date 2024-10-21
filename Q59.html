@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Signup</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        margin-top: 60px;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      .container {
+        height: 500px;
+        margin: auto;
+        width: 800px;
+        background-color: blue;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .form-box {
+        height: 85%;
+        width: 30%;
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      input[type="email"],
+      input[type="password"],
+      input[type="submit"] {
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding: 10px;
+        width: 90%;
+        margin-top: 10px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        background-color: blue;
+        color: white;
+        border: none;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      input[type="submit"]:hover {
+        background-color: darkblue;
+      }
+      .link {
+        text-decoration: none;
+        margin-top: 10px;
+        font-size: x-small;
+        color: blue;
+      }
+      .social-login {
+        display: flex;
+        margin-top: 20px;
+        width: 90%;
+        border-radius: 5px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      .facebook-login {
+        background-color: darkblue;
+        color: white;
+      }
+      .google-login {
+        border: 1px solid lightgray;
+        background-color: white;
+        color: gray;
+      }
+      .social-login i {
+        margin-right: 10px;
+      }
+      .divider {
+        display: flex;
+        margin: 10px 0;
+        align-items: center;
+      }
+      .divider hr {
+        width: 40%;
+      }
+      .divider span {
+        margin: 0 10px;
+      }
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          width: 90%;
+          height: auto; /* Allow the container to grow */
+        }
+        .form-box {
+          width: 100%; /* Take full width on smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h2>Login</h2>
+        <input placeholder="Email" type="email" aria-label="Email" />
+        <input placeholder="Password" type="password" aria-label="Password" />
+        <a class="link" href="#">Forgot password?</a>
+        <input type="submit" value="Login" />
+        <span>Don't have an account?<a class="link" href="#">Signup</a></span>
+        <div class="divider">
+          <hr />
+          <span>Or</span>
+          <hr />
+        </div>
+        <div class="social-login facebook-login">
+          <i class="fa-brands fa-facebook"></i>
+          <span>Login With Facebook</span>
+        </div>
+        <div class="social-login google-login">
+          <i class="fa-brands fa-google"></i>
+          <span>Login With Google</span>
+        </div>
+      </div>
+      <div class="form-box">
+        <h2>Signup</h2>
+        <input placeholder="Email" type="email" aria-label="Email" />
+        <input
+          placeholder="Create Password"
+          type="password"
+          aria-label="Create Password"
+        />
+        <input
+          placeholder="Confirm Password"
+          type="password"
+          aria-label="Confirm Password"
+        />
+        <input type="submit" value="Signup" />
+        <span>Already have an account?<a class="link" href="#">Login</a></span>
+        <div class="divider">
+          <hr />
+          <span>Or</span>
+          <hr />
+        </div>
+        <div class="social-login facebook-login">
+          <i class="fa-brands fa-facebook"></i>
+          <span>Login With Facebook</span>
+        </div>
+        <div class="social-login google-login">
+          <i class="fa-brands fa-google"></i>
+          <span>Login With Google</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
