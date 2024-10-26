@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="h-screen w-screen flex justify-center items-center">
+    <div
+      class="w-[800px] h-[500px] bg-blue-600 flex justify-around items-center px-[25px] py-[10px] rounded"
+    >
+      <div
+        class="text-white text-3xl w-[350px] pl-4 border-l-4 rounded border-white"
+      >
+        Form <br />Validation <br />Javascript
+      </div>
+      <div class="w-[450px] bg-white rounded">
+        <form class="p-[15px]">
+          <p class="font-black py-[20px]">Signup</p>
+          <input
+            class="border border-red-600 w-full p-2 mb-[5px] rounded-md"
+            type="text"
+            placeholder="Codinglab@gmail.com"
+          />
+          <p class="text-red-600 text-xs">
+            <span>⚠️</span>Please enter a valid email
+          </p>
+          <input
+            type="password"
+            class="border border-red-600 w-full p-2 mb-[5px] mt-4 rounded-md"
+            placeholder="Codinglab123"
+          />
+          <p class="text-red-600 text-xs">
+            <span>⚠️</span>
+            Please enter atleast 8 characters with number,symbole,Capital and
+            small latters
+          </p>
+          <input
+            type="password"
+            class="border border-red-600 w-full p-2 mt-4 mb-[5px] rounded-md"
+            placeholder="Codinglab12"
+          />
+          <p class="text-red-600 text-xs">
+            <span>⚠️</span>Password did not match
+          </p>
+          <button
+            class="w-[400px] text-white text-center py-3 bg-blue-600 my-[15px] mt-4 rounded-md"
+          >
+            Signup Now
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
