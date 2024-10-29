@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Evaluation</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        min-width: 70%;
+        background-color: blueviolet;
+        color: white;
+        padding-left: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      form table tr td {
+        padding-top: 10px;
+        padding-left: 15px;
+      }
+      .Address {
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <table>
+        <tr>
+          <td>First Name</td>
+          <td>
+            <input type="text" required /><span style="margin-left: 5px"
+              >(Max 30 characters a-z and A-Z)</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td>
+            <input type="text" required /><span style="margin-left: 5px"
+              >(Max 30 characters a-z and A-Z)</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Date Of Birth</td>
+          <td>
+            <select>
+              <option value="Day" selected>Day</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <select>
+              <option value="Month" selected>Month</option>
+              <option value="january">january</option>
+            </select>
+            <select>
+              <option value="Year" selected>Year</option>
+              <option value="2024">2024</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Mobile No</td>
+          <td>
+            <input type="number" min="10" required /><span
+              style="margin-left: 5px"
+              >(10 Digits)</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td>
+            <input type="radio" name="Gender" id="Male" /><label for="Male"
+              >Male</label
+            >
+            <input type="radio" name="Gender" id="Female" /><label for="Female"
+              >Female</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="Address">Address</td>
+          <td>
+            <textarea cols="30" rows="5"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td>
+            <input type="text" required /><span style="margin-left: 5px"
+              >(Max 30 characters a-z and A-Z)</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Pin Code</td>
+          <td>
+            <input type="number" required /><span style="margin-left: 5px"
+              >(6 Digits Number)</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>State</td>
+          <td>
+            <input type="text" required /><span style="margin-left: 5px"
+              >(Max 30 characters a-z and A-Z)</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>COUNTRY</td>
+          <td>
+            <input type="text" required value="INDIA" />
+          </td>
+        </tr>
+        <tr>
+          <td>HOBBIES</td>
+          <td>
+            <label style="margin: 0px 5px" for="Drawing">Drawing</label
+            ><input type="checkbox" required value="Drawing" id="Drawing" />
+            <label style="margin: 0px 5px" for="Singing">Singing</label
+            ><input type="checkbox" required value="Singing" id="Singing" />
+            <label style="margin: 0px 5px" for="Dancing">Dancing</label
+            ><input type="checkbox" required value="Dancing" id="Dancing" />
+            <label style="margin: 0px 5px" for="Sketching">Sketching</label>
+            <input type="checkbox" id="Sketching" />
+            <p>
+              Others <input type="checkbox" /><input
+                type="text"
+                name=""
+                id=""
+              />
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top">QUALIFICATION</td>
+          <td>
+            <table>
+              <tr>
+                <th style="padding: 0px 5px">SI.NO</th>
+                <th style="padding: 0px 5px">EXIMINATION</th>
+                <th style="padding: 0px 5px">BORAD</th>
+                <th style="padding: 0px 5px">PERCENTAGE</th>
+                <th style="padding: 0px 5px">YEAR PASSING</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>CLASS X</td>
+                <td><input type="text" required /></td>
+                <td><input type="text" required /></td>
+                <td><input type="text" required /></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>CLASS XII</td>
+                <td><input type="text" required /></td>
+                <td><input type="text" required /></td>
+                <td><input type="text" required /></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>GRADUATION</td>
+                <td><input type="text" required /></td>
+                <td><input type="text" required /></td>
+                <td><input type="text" required /></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>MASTERS</td>
+                <td><input type="text" required /></td>
+                <td><input type="text" required /></td>
+                <td><input type="text" required /></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td colspan="">(10 Characters Max)</td>
+                <td colspan="">(UpTo 2 Decimal)</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>COURSES <br />APPLIED FOR</td>
+          <td style="vertical-align: bottom">
+            BCA <input type="radio" name="Courses" value="BCA" />B.Com
+            <input type="radio" name="Courses" value="B.Com" />B.Sc
+            <input type="radio" name="Courses" value="B.Sc" />B.A
+            <input type="radio" name="Courses" value="B.A" />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
