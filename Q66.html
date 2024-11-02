@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="h-screen w-screen flex justify-center items-center">
+    <div class="mainContainer flex justify-center items-center">
+      <div class="leftBox bg-purple-700 min-w-[300px] rounded-xl p-4 mr-2">
+        <p class="text-white text-center">Login</p>
+        <form>
+          <table>
+            <tr>
+              <td class="text-white">Username*</td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Enter your Username"
+                  class="ml-1 px-2 py-1 rounded-lg w-[220px]"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="text-white">Password*</td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Enter your Password"
+                  class="ml-1 px-2 py-1 rounded-lg w-[220px]"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="my-4" /><span class="text-white">
+                  Remember me
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button
+                  class="text-purple-700 bg-yellow-300 my-4 w-[250px] py-1 rounded-md ml-4"
+                >
+                  Login
+                </button>
+              </td>
+            </tr>
+          </table>
+        </form>
+        <div class="flex justify-between">
+          <div class="leftText text-white border-b-2 text-[14px]">
+            Forget Password?
+          </div>
+          <div class="rightText text-white border-b-2 text-[14px]">
+            Don't Have Account?
+          </div>
+        </div>
+        <p class="text-white text-center my-4">
+          Images from <span class="text-white border-b-2">freePik</span>
+        </p>
+      </div>
+      <div class="rightBox">
+        <div>
+          <img src="men.png" alt="menImage" width="340" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
