@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body
+    class="h-screen w-screen flex justify-center items-center overflow-hidden"
+  >
+    <div class="maincontainer flex">
+      <div class="imgContainer w-[350px] h-[400px]">
+        <img src="DishImg.png" alt="Dish Image" />
+      </div>
+      <div class="formContainer w-[420px] h-[400px]">
+        <div class="interForm bg-gray-200 rounded-xl mt-[40px] p-6">
+          <p class="text-[30px] font-thin">Book Your Table</p>
+          <form>
+            <table>
+              <tr>
+                <td>Phone</td>
+                <td><p class="ml-5">Name</p></td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Enter your Phone no"
+                    class="w-[150px] rounded-lg"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Enter your Name"
+                    class="w-[150px] rounded-lg ml-5"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><p class="mt-4">Date</p></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <input type="date" class="w-[150px] rounded-lg" />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><p class="mt-4">Message</p></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <textarea
+                    placeholder="Enter your message"
+                    class="rounded-lg w-[250px] h-[90px]"
+                  ></textarea>
+                </td>
+              </tr>
+            </table>
+            <button
+              type="submit"
+              class="w-[100px] h-[35px] bg-blue-400 text-white rounded-lg"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
