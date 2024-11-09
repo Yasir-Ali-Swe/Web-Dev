@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="w-screen h-screen flex justify-center items-center">
+    <div class="mainCotainer w-[800px] bg-black relative">
+      <div>
+        <img src="formImg.jpg" alt="Form Pic" class="w-[100%] h-[100%]" />
+      </div>
+      <div class="formDiv absolute top-2 right-3">
+        <form>
+          <table>
+            <tr>
+              <td class="text-orange-600 text-[22px] font-black">Email</td>
+              <td class="text-orange-600 text-[22px] font-black">Name</td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Enter a valid email"
+                  class="p-2 text-center"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="p-2 text-center ml-2"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-orange-600 text-[22px] font-black">
+                Address
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input
+                  type="text"
+                  placeholder="Enter your address"
+                  class="p-2 text-center"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-orange-600 text-[22px] font-black">
+                Message
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <textarea
+                  placeholder="Enter your message"
+                  cols="15"
+                  rows="5"
+                  class="w-[250px]"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button
+                  type="submit"
+                  class="w-[300px] bg-orange-600 text-white my-4 h-[40px] rounded-lg"
+                >
+                  Submit
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-orange-600 text-[22px] font-black">
+                Images form <span class="border-b-2">Freepik</span>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
